@@ -1,0 +1,52 @@
+{
+  "name": "htmlcoin-api",
+  "description": "A HTMLCOIN blockchain REST and web socket API service for HTMLCOINCORE Node.",
+  "version": "1.0.1",
+  "repository": "https://github.com/bytesalt/htmlcoin-api.git",
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/bytesalt/htmlcoin-api/issues"
+  },
+  "homepage": "https://github.com/bytesalt/htmlcoin-api",
+  "license": "MIT",
+  "keywords": [
+    "insight",
+    "insight api",
+    "blockchain",
+    "htmlcoin api",
+    "blockchain api",
+    "json",
+    "htmlcoincore"
+  ],
+  "engines": {
+    "node": ">=12.1.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec --recursive"
+  },
+  "main": "lib",
+  "htmlcoincoreNode": "lib",
+  "dependencies": {
+    "async": "*",
+    "bignumber.js": "^9.0.1",
+    "bitcore-lib": "^8.25.7",
+    "bitcore-message": "^1.0.4",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "lodash": "^4.17.21",
+    "lru-cache": "^6.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "htmlcoin-lib": "git://github.com/bytesalt/htmlcoin-lib.git#master",
+    "request": "^2.88.2",
+    "web3": "^1.3.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "proxyquire": "^2.1.3",
+    "should": "^13.2.3",
+    "sinon": "^10.0.0"
+  }
+}
